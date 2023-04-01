@@ -463,6 +463,7 @@ ul.toolbar {
 
 .top ul.toolbar {
     margin-left: 8px;
+    margin-top: 10px;
 }
 
 ul.toolbar li {
@@ -521,6 +522,7 @@ ul.toolbar a {
     min-width: 4em;
 
     transition: background 0.2s linear, box-shadow 0.2s ease-out;
+    background-color: white;
 }
 
 ul.toolbar a.disabled {

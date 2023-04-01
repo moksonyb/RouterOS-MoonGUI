@@ -808,7 +808,8 @@ table .about td {
 #statusbar {
     position: absolute;
     z-index: 3;
-    padding: 10px 34px;
+    padding: 5px 28px;
+    border-spacing: 4px !important;
 }
 
 #statusbar td {
@@ -835,6 +836,7 @@ table .about td {
 
 .list {
     width: 100%;
+    margin-top: 35px;
 }
 
 .list td {

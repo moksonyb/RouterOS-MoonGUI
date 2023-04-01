@@ -288,7 +288,7 @@ td.menubar {
 }
 
 #menubar a.icon {
-    padding: 5px 7px 5px 10px;
+    padding: 5px 7px 5px 20px;
 }
 
 #menubar a.opened {}
@@ -521,8 +521,7 @@ ul.toolbar a {
     cursor: pointer;
     min-width: 4em;
 
-    transition: background 0.2s linear, box-shadow 0.2s ease-out;
-    background-color: white;
+    transition: background 0.1s linear, box-shadow 0.1s ease-out;
 }
 
 ul.toolbar a.disabled {
@@ -531,7 +530,7 @@ ul.toolbar a.disabled {
 }
 
 ul.toolbar a:hover {
-    background: #eee;
+    background: #f9f7f7;
 }
 
 ul.toolbar a.disabled:hover {
@@ -817,14 +816,21 @@ table .about td {
     background: #cccccc;
     border-radius: 5px;
     overflow: hidden;
+    text-align: center;
+    width: auto !important;
 }
 
 #statusbar td.disabled {
-    color: #c0c0c0;
+    color: black;
+    background-color: #f7665e;
 }
 
 #statusbar td.about {
     color: red;
+}
+
+#statusbar td.enabled {
+  background-color: #73d673;
 }
 
 .list {
@@ -1044,7 +1050,6 @@ textarea {
 }
 
 .disabled {
-    color: #888;
 }
 
 .tablerror {

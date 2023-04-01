@@ -1,7 +1,8 @@
 v\: * {
     /* VML stuff */
-    behavior:url(#default#VML); /* FIXME Property 'behavior' doesn't exist */
-    position:absolute
+    behavior: url(#default#VML);
+    /* FIXME Property 'behavior' doesn't exist */
+    position: absolute
 }
 
 [draggable=true] {
@@ -29,9 +30,6 @@ body {
 
 .top {
     background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 td.menu {
@@ -43,11 +41,13 @@ td.menu {
 #startup {
     margin: 4em 0 0 150px;
 }
+
 #startup h1 {
     margin: 0;
     font-size: 18px;
     font-weight: normal;
 }
+
 #startup img {
     margin: 0 0 0 1em;
 }
@@ -55,24 +55,30 @@ td.menu {
 #login {
     margin: 2em 1em 1em 10em;
 }
+
 #login h1 {
     font-weight: normal;
     font-size: 18px;
     margin-left: 1em;
 }
+
 #login table {
     margin: 2em 0 0 0;
 }
+
 #login table td {
     padding: 0 4px 0 0;
 }
+
 #login table td.label {
     text-align: right;
 }
+
 #login table td.toolbar {
     padding: 0 0 0 1em;
     vertical-align: top;
 }
+
 #login ul.toolbar {
     margin: 0;
 }
@@ -111,28 +117,35 @@ td.menu {
     display: block;
     height: 100%;
 }
+
 #menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 #menu li {
     list-style: none;
 }
+
 #menu li.group a:after {
     content: url("right-arrow.png");
     float: right;
 }
+
 #menu li.activegroup a:after {
     content: url("down-arrow.png");
     float: right;
 }
+
 #menu li.sep {
     height: 4px;
 }
+
 #menu ul.group {
     display: none;
 }
+
 #menu a {
     display: block;
     border: 1px solid #2c3034;
@@ -146,50 +159,64 @@ td.menu {
 
     transition: backgound 0.1s linear, box-shadow 0.3s linear;
 }
+
 #menu a.opened {
     background: #373778;
 }
+
 #menu a.active {
     background: #ccc;
     box-shadow: 1px 1px 1px #aaa inset;
 }
+
 #menu a.active:hover {
     background: #ccc;
 }
+
 #menu a.active:active {
     background: #ccc;
 }
+
 #menu a:hover {
     background: #5759c0;
 }
+
 #menu a.opened:hover {
-     background: #5759c0;
+    background: #5759c0;
 }
+
 #menu a:active {
     background: #aaa;
     box-shadow: 1px 1px 2px #888 inset;
 }
+
 #menu ul.activegroup {
     box-shadow: 1px 0 3px #000 inset;
 }
+
 #menu ul.activegroup li a {
     background-color: #3a404657;
     border: 1px solid #3a404682;
     margin: -1px 0;
 }
+
 #menu ul.activegroup li a.opened {
     background: #373778;
 }
+
 #menu ul.activegroup li a:hover {
     background: #5759c0;
 }
+
 #menu ul.activegroup li a.opened:hover {
     background: #5759c0;
 }
+
 #menu ul.activegroup li a:active {
     background: #aaa;
     box-shadow: 1px 1px 2px #888 inset;
 }
+
 #menu input {
     font-size: 11px;
     font-family: verdana, arial, helvetica, sans-serif;
@@ -200,21 +227,26 @@ td.menu {
     background: #ddd;
     background: transparent;
 }
+
 #menu input:focus {
     border: 1px solid #888;
 }
+
 #menu a:active input {
     background: #aaa;
     background: transparent;
 }
+
 #menu a:hover input {
     background: #eee;
     background: transparent;
 }
+
 #menu ul.activegroup input {
     background: #ccc;
     background: transparent;
 }
+
 #menu ul.activegroup a:hover input {
     background: #ddd;
     background: transparent;
@@ -223,8 +255,9 @@ td.menu {
 td.menubar {
     background: #ddd;
 }
-#menubar {
-}
+
+#menubar {}
+
 #menubar ul {
     list-style: none;
     display: flex;
@@ -232,11 +265,13 @@ td.menubar {
     width: max-content;
     margin-top: 0 !important;
 }
+
 #menubar li {
     display: table;
     list-style: none;
     height: 3.45rem;
 }
+
 #menubar a {
     text-decoration: none;
     color: #444444;
@@ -250,33 +285,39 @@ td.menubar {
     display: table-cell;
     font-weight: bold;
 }
+
 #menubar a.icon {
     padding: 5px 7px 5px 10px;
 }
-#menubar a.opened {
 
-}
+#menubar a.opened {}
+
 #menubar a.active {
     background: #ccc;
     box-shadow: 1px 1px 1px #aaa inset;
 }
+
 #menubar a.active:hover {
     background: #fff;
 }
+
 #menubar a.active:active {
     background: #ccc;
 }
+
 #menubar a:hover {
     background: #ffffff42;
 }
-#menubar a.opened:hover {
-}
+
+#menubar a.opened:hover {}
+
 #menubar a:active {
     background: #ccc;
     box-shadow: 1px 1px 2px #888 inset;
 }
-#menubar {
-}
+
+#menubar {}
+
 #menubar input {
     background: transparent;
 }
@@ -289,6 +330,7 @@ td.menubar {
     margin: 5px -6px 1px 12px;
     padding: 0px 20px;
 }
+
 #title input {
     font-family: verdana, arial, helvetica, sans-serif;
     background-color: #ccc;
@@ -309,16 +351,19 @@ td.menubar {
     padding: 0;
     margin: 0;
 }
+
 #tabs .prefix {
     float: left;
     background: none;
     padding-left: 24px;
 }
+
 #tabs li {
     float: left;
     margin: 0;
     padding: 0;
 }
+
 #tabs a {
     float: left;
     margin: 6px 5px 0 0;
@@ -334,26 +379,30 @@ td.menubar {
 
     transition: background 0.2s linear;
 }
+
 #tabs a:hover {
     background: #fff;
 }
+
 #tabs a:active {
     background: #ccc;
     box-shadow: 1px 1px 2px #aaa inset;
 }
+
 #tabs a.active {
     margin-top: 5px;
     background: white;
     box-shadow:
         1px 1px 2px #fff inset,
-	0 1px 20px 0 rgba(240,240,240,0.2) inset,
-	0 2px #ffffff;
+        0 1px 20px 0 rgba(240, 240, 240, 0.2) inset,
+        0 2px #ffffff;
     border-top: 2px solid #629ff9;
 }
-#tabs a.active:active {
-}
-#tabs a.active:hover {
-}
+
+#tabs a.active:active {}
+
+#tabs a.active:hover {}
+
 #tabs input {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 11px;
@@ -362,22 +411,27 @@ td.menubar {
     padding: 0;
     width: 10em;
 }
+
 #tabs a input {
     background: #e8e8e8;
     background: transparent;
 }
+
 #tabs a:hover input {
     background: #f8f8f8;
     background: transparent;
 }
+
 #tabs a.active input {
     background: #fff;
     background: transparent;
 }
+
 #tabs a.active:hover input {
     background: #fff;
     background: transparent;
 }
+
 #tabend {
     clear: left;
 }
@@ -405,25 +459,32 @@ ul.toolbar {
     padding: 0;
     margin: 2px 0 4px 2px;
 }
+
 .top ul.toolbar {
     margin-left: 8px;
 }
+
 ul.toolbar li {
     float: left;
     vertical-align: middle;
 }
+
 ul.toolbar li.hidden {
     display: none;
 }
+
 ul.toolbar li.sep {
     padding: 1px 10px 0 0;
 }
+
 ul.toolbar li.custom {
     padding: 0;
 }
+
 .top ul.toolbar li.custom {
     margin: 2px 4px 0 0;
 }
+
 ul.toolbar li.postfix {
     background: none;
     float: none;
@@ -432,6 +493,7 @@ ul.toolbar li.postfix {
     padding: 4px 8px 4px 0;
     margin: 0 2em 0 0;
 }
+
 ul.toolbar li.ending {
     background: none;
     float: none;
@@ -439,6 +501,7 @@ ul.toolbar li.ending {
     padding: 0;
     margin: 0;
 }
+
 ul.toolbar a {
     float: none;
     display: block;
@@ -447,7 +510,7 @@ ul.toolbar a {
 
     border: 1.5px solid #0d6efd;
     border-radius: 3px;
-     /* shadow */
+    /* shadow */
     color: #0d6efd;
 
     text-decoration: none;
@@ -458,44 +521,56 @@ ul.toolbar a {
 
     transition: background 0.2s linear, box-shadow 0.2s ease-out;
 }
+
 ul.toolbar a.disabled {
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     color: #888;
 }
+
 ul.toolbar a:hover {
     background: #eee;
 }
+
 ul.toolbar a.disabled:hover {
     background: #ddd;
 }
+
 ul.toolbar a.pressed {
     background: #bbb;
     box-shadow: 1px 1px #aaa inset;
 }
-ul.toolbar a.pressed:hover {
-}
+
+ul.toolbar a.pressed:hover {}
+
 ul.toolbar a:active {
     background: #aaa;
     box-shadow: 1px 1px 2px #999 inset;
 }
+
 ul.toolbar a.disabled:active {
     background: #ddd;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+
 ul.toolbar a:focus {
-    text-decoration: strikeout; /* FIXME  text-decoration strikeout is not a text-decoration value */
+    text-decoration: strikeout;
+    /* FIXME  text-decoration strikeout is not a text-decoration value */
 }
-ul.toolbar a span {
-}
+
+ul.toolbar a span {}
+
 ul.toolbar li.custom:active {
     background: none;
 }
+
 ul.toolbar li.sep:active {
     background: none;
 }
+
 ul.toolbar .checkbox {
     margin: 0 0 0 1em;
 }
+
 ul.toolbar a input {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 11px;
@@ -506,9 +581,11 @@ ul.toolbar a input {
     background: transparent;
     width: 10em;
 }
+
 ul.toolbar li.custom {
     vertical-align: middle;
 }
+
 ul.toolbar .filter {
     float: right;
     margin-top: 1px;
@@ -526,6 +603,7 @@ ul.popup {
     z-index: 100;
     border-radius: 5px;
 }
+
 ul.popup li {
     float: none;
     display: block;
@@ -533,6 +611,7 @@ ul.popup li {
     padding: 0;
     background: none;
 }
+
 ul.popup a {
     display: block;
     background: none;
@@ -544,11 +623,14 @@ ul.popup a {
     cursor: pointer;
 
     user-select: none;
-    -webkit-user-select: none; /* Safari */
+    -webkit-user-select: none;
+    /* Safari */
 }
+
 ul.popup a:hover {
     background: #ccc;
 }
+
 ul.popup a:active {
     background: #aaa;
 }
@@ -568,9 +650,11 @@ a.tbtn {
     justify-content: center;
     font-family: 'Courier New', monospace;
 }
+
 a.tbtn:hover {
     background: #F0F0F0;
 }
+
 a.tbtn:active {
     background: #F0F0F0;
     border: 1px inset #000000;
@@ -586,6 +670,7 @@ a.sbtn {
     cursor: inherit;
     white-space: nowrap;
 }
+
 a.sbtn_disabled {
     border: 1px solid #f0f0f0;
     padding: 2px 4px 2px 3px;
@@ -595,15 +680,18 @@ a.sbtn_disabled {
     color: #000000;
     white-space: nowrap;
 }
+
 a.sbtn:hover {
     border: 1px solid #888;
     background: #ddd;
     border-radius: 3px;
 
     box-shadow:
-        1px 1px 2px rgba(255,255,255,0.8) inset,
-	1px 1px 2px rgba(0,0,0,0.2); /* shadow */
+        1px 1px 2px rgba(255, 255, 255, 0.8) inset,
+        1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* shadow */
 }
+
 a.sbtn:active {
     background: #aaa;
     box-shadow: 1px 1px 2px #999 inset;
@@ -628,7 +716,7 @@ a.sbtn:active {
     width: 100%;
     border: 1px solid #ccc;
     background: #fff;
-    box-shadow: -1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
 
     /* in iframe we don't have set correct fonts, set them now */
     font-family: verdana, arial, helvetica, sans-serif;
@@ -637,7 +725,8 @@ a.sbtn:active {
     overflow: hidden;
     margin-left: 20px;
 }
-.table td  {
+
+.table td {
     text-align: left;
     border-bottom: 1px solid #ccc;
     border-left: 1px solid #ccc;
@@ -647,20 +736,25 @@ a.sbtn:active {
     empty-cells: show;
     padding: 8px;
 }
+
 .table .droptarget td {
     padding: 4px 4px 3px 4px;
     border-bottom: 2px solid #000;
 }
+
 .table .droptarget .comment td {
     padding: 4px;
     border-bottom: 1px solid #ccc;
 }
+
 table .about td {
     color: red;
 }
+
 .table td:first-child {
     border-left: none;
 }
+
 .table th {
     text-align: left;
     font-weight: bold;
@@ -670,32 +764,40 @@ table .about td {
     text-overflow: ellipsis;
     background: #ebebeb;
 }
+
 .table th:first-child {
     border-left: none;
 }
+
 .table th.pressed {
     background: #aaa;
     box-shadow: 1px 1px 2px #888 inset;
 }
+
 .table th.sort-ascend span:before {
     content: url("ascend.png");
     padding-right: 4px;
 }
+
 .table th.sort-descend span:before {
     content: url("descend.png");
     padding-right: 4px;
 }
+
 .table .droptarget th {
     padding: 4px 4px 3px 4px;
     border-bottom: 2px solid #000;
 }
+
 .table tbody.invalid {
     color: #f00;
 }
+
 .table tbody.disabled {
     color: #888;
     font-style: italic;
 }
+
 .table tbody.selected {
     background: #9dc0ea;
     color: #000;
@@ -713,9 +815,11 @@ table .about td {
     border-radius: 5px;
     overflow: hidden;
 }
+
 #statusbar td.disabled {
     color: #c0c0c0;
 }
+
 #statusbar td.about {
     color: red;
 }
@@ -723,15 +827,18 @@ table .about td {
 .list {
     width: 100%;
 }
+
 .list td {
     padding: 2px 0 2px 0;
     margin: 0;
 }
+
 .list td.ctrl {
     min-width: 30px;
     font-size: 8px;
     border-top: 1px solid #ddd;
 }
+
 .list td.label {
     text-align: right;
     font-weight: bold;
@@ -743,6 +850,7 @@ table .about td {
     border-top: 1px solid #ddd;
     width: 100px;
 }
+
 .list td.label input {
     font-family: verdana, arial, helvetica, sans-serif;
     font-weight: bold;
@@ -755,26 +863,32 @@ table .about td {
     width: 15em;
     box-shadow: none;
 }
+
 .list td.label input:focus {
     border: 1px solid #888;
 }
-.list tbody.group td.label {
-}
+
+.list tbody.group td.label {}
+
 .list td.extra {
     width: 26px;
     border-top: 1px solid #ddd;
 }
+
 .list td.value {
     border-top: 1px solid #ddd;
 }
+
 .list td.tvalue {
     min-width: 10em;
     border-top: 1px solid #ddd;
     padding-right: 10px;
 }
+
 .list td.sep {
     padding: 0;
 }
+
 .list td.flabel {
     background: #f0f0f0;
     font-style: italic;
@@ -785,14 +899,17 @@ table .about td {
     height: 20px;
     border-top: 1px solid #ddd;
 }
+
 .list td.fextra {
     min-width: 26px;
     border-top: 1px solid #fff;
 }
+
 .list td.fvalue {
     width: 100%;
     border-top: 1px solid #fff;
 }
+
 .list h2 {
     text-align: right;
     font-weight: normal;
@@ -803,6 +920,7 @@ table .about td {
     border-bottom: 1px solid #bbb;
     box-shadow: 0 1px #fff;
 }
+
 .list h2 input {
     text-align: right;
     background: #f0f0f0;
@@ -815,9 +933,11 @@ table .about td {
     width: 15em;
     box-shadow: none;
 }
+
 .list h2.setup {
     text-align: left;
 }
+
 .list hr {
     border: none;
     border-bottom: 1px solid #bbb;
@@ -825,15 +945,19 @@ table .about td {
     margin: 0 0 1px 0;
     box-shadow: 0 1px #fff;
 }
+
 .list tbody tr.closed {
     display: none;
 }
+
 .list tbody.hidden tr {
     display: none;
 }
+
 .list .droptarget td {
     border-top: 1px solid #000;
 }
+
 .list .droptarget td table td {
     border-top: 0;
 }
@@ -847,10 +971,12 @@ input {
     border-color: #cccccc;
     border-radius: 5px;
 }
+
 input:disabled {
     color: #888;
     background: #fff;
 }
+
 select {
     color: #000;
     margin: 0;
@@ -859,39 +985,47 @@ select {
     border-radius: 5px;
     cursor: pointer;
 }
+
 #title select {
     padding: 0 1px;
 }
+
 @-moz-document url-prefix() {
     select {
-	padding: 4px 5px;
+        padding: 4px 5px;
     }
 }
+
 select:disabled {
     color: #888;
     background: #fff;
 }
+
 span.select {
     display: inline-block;
     margin: 4px;
 }
+
 textarea {
     display: block;
     width: 99%;
     margin: 2px;
     border: 1px solid #888;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+
 .graph {
     margin: 4px 4px 2px 2px;
 }
+
 .graph svg.graph {
     background: #fff;
     margin: 0;
     border: 1px solid #888;
     overflow: hidden;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+
 .graph table td {
     width: 25%;
     padding: 0 4px 0 0;
@@ -901,12 +1035,15 @@ textarea {
 .error {
     color: #f00;
 }
+
 .changed {
     color: #00f;
 }
+
 .disabled {
     color: #888;
 }
+
 .tablerror {
     color: #f00;
     text-align: center;
@@ -917,7 +1054,7 @@ textarea {
     display: inline-block;
     position: relative;
     margin: 2px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .cbox input {
@@ -932,10 +1069,12 @@ textarea {
     box-shadow: none;
     outline: none;
 }
+
 .cbox input:disabled {
     color: #888;
     background: #fff;
 }
+
 .cbox select {
     position: relative;
     width: 11em;
@@ -944,6 +1083,7 @@ textarea {
     box-shadow: none;
     background: #fff;
 }
+
 .cbox select:disabled {
     color: #888;
     background: #fff;
@@ -952,6 +1092,7 @@ textarea {
 .checkbox {
     white-space: nowrap;
 }
+
 .checkbox input {
     font-size: 11px;
     border: none;
@@ -960,9 +1101,11 @@ textarea {
     vertical-align: middle;
     box-shadow: none;
 }
+
 .checkbox input:focus {
     border: 1px solid #888;
 }
+
 .checkbox td {
     padding: 2px 1em 2px 0;
     margin: 0 2px 0 0;
@@ -973,6 +1116,7 @@ textarea {
     margin: 2px 1em 2px 2px;
     vertical-align: bottom;
 }
+
 .radio input {
     margin: 0 2px 0 0;
     padding: 0;
@@ -986,15 +1130,18 @@ textarea {
     white-space: pre-wrap;
 
     user-select: text;
-    -webkit-user-select: text; /* Safari */
+    -webkit-user-select: text;
+    /* Safari */
 }
+
 .roprevalue {
     font-family: monospace;
     padding: 4px 2px;
     margin: 0;
 
     user-select: text;
-    -webkit-user-select: text; /* Safari */
+    -webkit-user-select: text;
+    /* Safari */
 }
 
 .opt div {
@@ -1041,12 +1188,14 @@ a.not {
     padding: 0;
     border: 1px solid #888;
     background: #fff;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+
 a.not img {
     vertical-align: -1px;
     border: none;
 }
+
 a.not_disabled {
     font-size: 10px;
     width: 12px;
@@ -1054,15 +1203,18 @@ a.not_disabled {
     padding: 0;
     border: 1px solid #888;
     background: #eee;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+
 a.not_disabled img {
     vertical-align: -1px;
     border: none;
 }
+
 a.not:hover {
     background: #eee;
 }
+
 a.not:active {
     background: #aaa;
     box-shadow: 1px 1px 2px #888 inset;
@@ -1078,7 +1230,8 @@ div.icon {
 }
 
 .disabled div.icon {
-    filter: gray; /* IE */
+    filter: gray;
+    /* IE */
     filter: grayscale(1);
 }
 
@@ -1097,7 +1250,9 @@ form {
 }
 
 @keyframes blink {
-    50% { box-shadow: none; }
+    50% {
+        box-shadow: none;
+    }
 }
 
 .terminal .cursor {
@@ -1106,7 +1261,7 @@ form {
 }
 
 .top-bottom {
-  background: #f0f0f0;
-  display: block;
-  padding-top: 15px;
+    background: #f0f0f0;
+    display: block;
+    padding-top: 15px;
 }
